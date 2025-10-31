@@ -380,7 +380,7 @@ class DOMHTMLMovieParser(DOMParserBase):
         Rule(
             key='genres',
             extractor=Path(
-                foreach='//td[starts-with(text(), "Genre")]/..//li/a',
+                foreach='//span[starts-with(text(), "Genre")]/..//li/a',
                 path='./text()'
             )
         ),
