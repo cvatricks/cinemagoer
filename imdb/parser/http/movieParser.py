@@ -370,7 +370,7 @@ class DOMHTMLMovieParser(DOMParserBase):
         ),
         Rule(
             key='myrating',
-            extractor=Path('//span[@id="voteuser"]//text()')
+            extractor=Path('//span[@class="sc-d1a56ede-1 bWBHDm"]//text()')
         ),
         Rule(
             key='plot summary',
